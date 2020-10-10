@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Atlantis</title>
+        <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <section>
+            <img src = "C:\Users\towea\Downloads\parallaxpractice\atlantis2.jpg" id = "bg">
+            <img src = "C:\Users\towea\Downloads\parallaxpractice\moon.png" id = "moon">
+            <img src = "C:\Users\towea\Downloads\parallaxpractice\birds.png" id = "birds">
+            <img src = "C:\Users\towea\Downloads\parallaxpractice\castle1.png" id = "castle1">
+            <h1 id="text">C h i l d r e n o f t h e H a l l o w</h2>
+        </section>
+        <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let birds = document.getElementById("birds");
+        let castle1 = document.getElementById("castle1");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            bg.style.top = value + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            birds.style.top = -value * 0.15 + 'px';
+            castle1.style.top = value * 0.15 + 'px';
+            text.style.top = -value * .5 + 'px';
+        })
+        </script>
+        <p class="storyBody"><span class = "first-letter">T</span>here once was a city called Atlantis. A group of young explorers stumbled on it one day. There was something about it that stood out. Something about it that sparkled and glowed. Something that inspired a spirit of wonder.</p>
+        <img src = "C:\Users\towea\Downloads\parallaxpractice\atlantis3.jpg" id = "atlantis3">
+    </body>
+</html>
