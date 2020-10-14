@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Fondamento', cursive;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 4px 4px 4px black;
 }
 body
 {
@@ -11,7 +11,7 @@ body
     min-height: 1500px;
     font-family: 'Peddana', serif;
 }
-section 
+header 
 {
     position: relative;
     width: 100%;
@@ -21,7 +21,7 @@ section
     justify-content: center;
     align-items: center;
 }
-section::before
+header::before
 {
     content: "";
     position: absolute;
@@ -31,7 +31,7 @@ section::before
     background: linear-gradient(to top, whitesmoke, transparent);
     z-index: 10000;
 }
-section::after
+header::after
 {
     content: "";
     position: absolute;
@@ -39,11 +39,10 @@ section::after
     left: 0;
     width: 100%;
     height: 100%;
-    background: beige;
     z-index: 10000;
     mix-blend-mode: color;
 }
-section img 
+header img 
 {
     position: absolute;
     top: 0;
@@ -52,25 +51,27 @@ section img
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+    filter: grayscale(25%);
 }
 #text
 {
     position: relative;
-    color: #fff;
+    color: whitesmoke;
     font-size: 5em;
-    z-index: 3;
+    z-index: 2;
 }
 #castle1
 {
-    z-index: 2;
+    z-index: 3;
 }
 .first-letter {
-   font-size: 200px;
-   line-height: 70px;
+    font-size: 200px;
+    line-height: 30px;
 }
 p {
+    padding: 50px;
     font-size: 30px;
-    margin-top: 158px;
+    margin-top: 150px;
     margin-left: 150px;
     margin-right: 150px;
 }
@@ -81,28 +82,43 @@ p {
     margin-left: 150px;
     margin-right: 150px;
 }
+#atlantis3:hover {
+    opacity: 0.0;
+    transition: all 2s ease;
+}
 .TextWrap {
     float: left;
-    margin-top: 150px;
+    margin-top: 50px;
  }
  #atlantis4 {
      max-width: 300px;
      height: auto;
      border-radius: 50%;
+     margin-top: 150px;
      margin-left: 150px;
      margin-right: 150px;
  }
+ #atlantis4:hover {
+    opacity: 0.0;
+    transition: all 2s ease;
+}
  .TextWrapRight {
      float: right;
+     margin-top: 50px;
      margin: 50px;
  }
  #atlantis5 {
      max-width: 300px;
      height: auto;
      border-radius: 50%;
+     margin-top: 150px;
      margin-left: 150px;
      margin-right: 150px;
  }
+ #atlantis5:hover {
+    opacity: 0.0;
+    transition: all 2s ease;
+}
  .TextWrapLeft {
      float: left;
      margin: 50px;
@@ -111,23 +127,31 @@ p {
      max-width: 300px;
      height: auto;
      border-radius: 50%;
+     margin-top: 150px;
      margin-left: 150px;
      margin-right: 150px;
  }
+ #head:hover {
+    opacity: 0.0;
+    transition: all 2s ease;
+}
  .TextWrapRight2 {
      float: right;
      margin: 50px;
  }
  #mountain {
     width: 100%;
-    background: linear-gradient(to bottom, transparent)
-    
+    background: linear-gradient(to bottom, transparent)  
 }
 #woman {
     max-width: 300px;
     height: auto;
     margin-left: 150px;
     margin-right: 85px;
+}
+#woman:hover {
+    opacity: 0.0;
+    transition: all 2s ease;
 }
 .TextWrapLeft2{
     float: left;
@@ -136,4 +160,11 @@ p {
 .TextWrapRight3 {
     float: right;
     margin: 50px;
+}
+#girl:hover {
+    opacity: 0.0;
+    transition: all 2s ease;
+}
+footer {
+    float: left;
 }
